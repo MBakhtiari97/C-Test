@@ -11,10 +11,12 @@
 </head>
 
 <body>
+    <h1>First AngularJs App</h1>
     <div ng-controller="myFirstController">
-        <h1>First AngularJs App</h1>
+        <b>{{name}}</b><br /><br />
+        {{sayHello()}}
+        <input type="text" ng-model="name">
     </div>
-
 </body>
 
 </html>

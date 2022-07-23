@@ -2,8 +2,11 @@
     'use strict';
 
     angular.module('myFirstApp', [])
-        .controller('myFirstController', function () {
-
+        .controller('myFirstController', function ($scope) {
+            $scope.name = "Hurricane",
+                $scope.sayHello = function () {
+                    return "hello test";
+                }
         });
 
 })();
