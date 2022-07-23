@@ -8,5 +8,8 @@
                     return "hello test";
                 }
         });
+    angular.module('NameCalculator', [])
+        .controller('NameCalculatorController', function ($scope) {
 
+        });
 })();
