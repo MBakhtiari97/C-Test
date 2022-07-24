@@ -1,0 +1,35 @@
+<html lang="en" ng-app="Index5">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 4</title>
+</head>
+
+<body ng-controller="Index5Controller">
+    <input ng-model="query">
+    <!-- <span ng-show="query">Search for : {{query}}</span> -->
+    <span ng-if="query">Search for : {{query}}</span>
+
+    <br>
+
+    <div>
+        <ul>
+            <li ng-repeat="artist in artists">
+                <img ng-src="/FirstFolder/Images/{{artist.artistName}}.jpg" style="max-width: 100;border-radius: 50%">
+                <br>
+                {{artist.artistName}}
+                <br>
+                {{artist.artistAge}}
+                <br>
+                {{artist.artistBio}}
+                <hr>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -12,7 +12,7 @@
 <body>
     <h1>DI in js and angularJs</h1>
     <div ng-controller="DIController">
-        <input type="text" ng-model="name">
+        <input type="text" ng-model="name" ng-blur="upper();">
 
         <h4>You Entered {{name}}</h4>
     </div>
