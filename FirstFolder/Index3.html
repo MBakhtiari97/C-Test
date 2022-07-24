@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 3</title>
+</head>
+
+<body>
+    <h1>HTML Custom Attributes</h1>
+    <div id="target" ng-app="TestModule" greeting="hello">
+        <section>Section 1
+            <article>Article 1</article>
+        </section>
+    </div>
+    <script>
+        var elem = document.getElementById('target');
+        var elem2 = document.querySelector('[ng-app]');
+
+        console.log(elem);
+        console.log(elem2);
+
+        console.log(elem.getAttribute('greeting'));
+        console.log(elem.getAttribute('ng-app'));
+
+    </script>
+</body>
+
+</html>
